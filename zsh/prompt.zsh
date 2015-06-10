@@ -20,7 +20,7 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "on git:%{$fg_bold[green]%}[$(git_prompt_info)%{$reset_color%}"
+      echo "on git:%{$fg_bold[green]%}[$(git_prompt_info)]%{$reset_color%}"
     else
       echo "on git:%{$fg_bold[red]%}[$(git_prompt_info)]%{$reset_color%}"
     fi
@@ -55,7 +55,7 @@ user_name () {
 }
 
 
-directory_name() {  
+directory_name() {
   echo "%{$terminfo[bold]$fg[yellow]%}${PWD/#$HOME/~}%{$reset_color%}"
 }
 
