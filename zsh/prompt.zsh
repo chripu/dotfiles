@@ -20,9 +20,9 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on git:%{$fg_bold[green]%}[$(git_prompt_info)%{$reset_color%}"
     else
-      echo "on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on git:%{$fg_bold[red]%}[$(git_prompt_info)]%{$reset_color%}"
     fi
   fi
 }
@@ -46,12 +46,22 @@ need_push () {
   fi
 }
 
-
-directory_name() {
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+username_or_alias () {
+  [ -f ~/.user-name ] && cat ~/.user-name || echo $USER
 }
 
-export PROMPT=$'\nin $(directory_name) $(git_dirty)$(need_push)\n› '
+user_name () {
+  echo "%{$fg_bold[cyan]%}$(username_or_alias)%{$reset_color%}"
+}
+
+
+directory_name() {  
+  echo "%{$terminfo[bold]$fg[yellow]%}${PWD/#$HOME/~}%{$reset_color%}"
+}
+
+
+
+export PROMPT=$'\n%{$fg[cyan]%}$(user_name) in $(directory_name) $(git_dirty)$(need_push) \n$> '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
