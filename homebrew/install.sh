@@ -13,6 +13,14 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew install zsh
+brew install git
+brew install grc
+brew install coreutils
+brew install wget
+brew install tree
+brew install ncftp
+brew install node
+brew install hub
 
 exit 0
