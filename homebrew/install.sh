@@ -15,7 +15,6 @@ fi
 # Install homebrew packages
 brew install zsh
 brew install git
-brew install grc
 brew install coreutils
 brew install wget
 brew install tree
