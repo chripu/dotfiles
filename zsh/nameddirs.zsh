@@ -2,8 +2,8 @@ typeset -A NAMED_DIRS
 
 NAMED_DIRS=(
   dev       ~/Development/Repositories
-  devbn     ~/Development/Repositories/burdanews
-  devmw     ~/Development/Repositories/mwallasch
+  pbyde     ~/Development/Repositories/pby_playboyde
+  pbypp     ~/Development/Repositories/pby_playboyplus
 )
 
 for key in ${(k)NAMED_DIRS}
