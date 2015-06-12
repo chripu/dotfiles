@@ -1,4 +1,4 @@
-# may dotfiles
+# My dotfiles
 
 This is a fork of [Zach Holmans](https://github.com/holman/dotfiles) awesome dotfiles.
 
