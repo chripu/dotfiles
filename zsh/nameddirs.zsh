@@ -4,6 +4,11 @@ NAMED_DIRS=(
   dev       ~/Development/Repositories
   pbyde     ~/Development/Repositories/pby_playboyde
   pbypp     ~/Development/Repositories/pby_playboyplus
+  pbyte     ~/Development/Repositories/pby_tabletedition
+  pbypc     ~/Development/Repositories/pby_playmatecasting
+  pbynl     ~/Development/Repositories/pby_newsletter
+  hbmlc     ~/Development/Repositories/hbm_lottery_calendar
+  hbmep     ~/Development/Repositories/hbm_epaper
 )
 
 for key in ${(k)NAMED_DIRS}
