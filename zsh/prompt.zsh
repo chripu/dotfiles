@@ -54,14 +54,15 @@ user_name () {
   echo "%{$fg_bold[cyan]%}$(username_or_alias)%{$reset_color%}"
 }
 
+php_version() {
+  echo "%{$fg[magenta]%}$(phpbrew_current_php_version)%{$reset_color%}"
+}
 
 directory_name() {
   echo "%{$terminfo[bold]$fg[yellow]%}${PWD/#$HOME/~}%{$reset_color%}"
 }
 
-
-
-export PROMPT=$'\n%{$fg[cyan]%}$(user_name) in $(directory_name) $(git_dirty)$(need_push) \n$> '
+export PROMPT=$'\n$(user_name) with $(php_version) in $(directory_name) $(git_dirty)$(need_push) \n$> '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }

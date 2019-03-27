@@ -1,6 +1,13 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+# Add elastic searchto path
+export PATH="/usr/local/opt/elasticsearch@1.7/bin:$PATH"
+
+# ADD nvm to path
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # Add composer to path
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
@@ -39,3 +46,6 @@ do
 done
 
 unset config_files
+
+# https://github.com/phpbrew/phpbrew
+source $HOME/.phpbrew/bashrc
