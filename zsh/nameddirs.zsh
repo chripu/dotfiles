@@ -11,6 +11,7 @@ NAMED_DIRS=(
   hbmlc     ~/Development/Repositories/hbm_lottery_calendar
   hbmep     ~/Development/Repositories/hbm_epaper
   hbmpp     ~/Development/Repositories/hbm_privacy
+  hbmlp     ~/Development/Repositories/hbm_legal
   hbmin     ~/Development/Repositories/hbm_invitations
   cinde     ~/Development/Repositories/cin_cms_thunder
 )
