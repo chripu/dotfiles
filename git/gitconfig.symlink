@@ -1,11 +1,8 @@
 [user]
-  name = AUTHOR_NAME
-  email = AUTHOR_EMAIL
-[github]
-  user = YOUR_GITHUB_USERNAME
-  token = YOUR_GITHUB_TOKEN
+  name = Christian Puchinger
+  email = puchinger@burda.com
 [mergetool]
-    keepBackup = false
+  keepBackup = false
 [difftool]
   prompt = false
 [color]
@@ -20,10 +17,10 @@
   untracked = cyan
 [alias]
   wtf = !$ZSH/bin/git-wtf
-  st = status -sb
-  aa = !git add -A && git status -sb
-  ci = commit
-  cm = commit -m
+  st = status -b
+  aa = !git add -A && git status -b
+  cm = commit
+  ci = commit -m
   updev = !git fetch && git merge origin/develop
   save = !git add -A && git commit -m 'SAVEPOINT'
   undo = reset HEAD~1 --mixed
@@ -39,8 +36,8 @@
   lp = log --pretty=oneline --graph --first-parent --abbrev-commit
   ln = log --oneline --decorate
 [core]
-  excludesfile = ~/.gitignore
-	editor = atom --wait
+  excludesfile = /Users/d429161/.gitignore
+  editor = sublime -n -w
 [apply]
   whitespace = nowarn
 [push]
@@ -49,3 +46,8 @@
   #
   # Setting to git 2.0 default to suppress warning message
   default = simple
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
