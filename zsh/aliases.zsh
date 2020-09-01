@@ -4,6 +4,10 @@ function kill-all-php() {
     kill $(ps aux | grep '[p]hp' | awk '{print $2}')
 }
 
+function kill-all-nginx() {
+    kill $(ps aux | grep '[n]ginx' | awk '{print $2}')
+}
+
 function start-dev() {
     mysql.server start
     phpbrew fpm start

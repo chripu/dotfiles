@@ -1,15 +1,22 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# Add elastic searchto path
+
+# Add elastic search to path
 export PATH="/usr/local/opt/elasticsearch@1.7/bin:$PATH"
+
 
 # ADD nvm to path
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 
 # Add composer to path
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -48,4 +55,14 @@ done
 unset config_files
 
 # https://github.com/phpbrew/phpbrew
-source $HOME/.phpbrew/bashrc
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+# Add MYSQL to path. (Only necessary  because its not the newest version.)
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# Add symfony to path
+export PATH="$HOME/.symfony/bin:$PATH"
+
+# Add openssl and curl to path
+#export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+#export PATH="/usr/local/opt/curl/bin:$PATH"

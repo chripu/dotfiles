@@ -10,10 +10,12 @@ NAMED_DIRS=(
   pbytools  ~/Development/Repositories/pby_tools
   hbmlc     ~/Development/Repositories/hbm_lottery_calendar
   hbmep     ~/Development/Repositories/hbm_epaper
+  hbmep2    ~/Development/Repositories/hbm_epaper_portal
   hbmpp     ~/Development/Repositories/hbm_privacy
   hbmlp     ~/Development/Repositories/hbm_legal
   hbmin     ~/Development/Repositories/hbm_invitations
   cinde     ~/Development/Repositories/cin_cms_thunder
+  foclp     ~/Development/Repositories/foc_landingpage
 )
 
 for key in ${(k)NAMED_DIRS}
