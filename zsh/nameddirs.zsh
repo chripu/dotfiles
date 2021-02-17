@@ -2,20 +2,21 @@ typeset -A NAMED_DIRS
 
 NAMED_DIRS=(
   dev       ~/Development/Repositories
-  pbyde     ~/Development/Repositories/pby_playboyde
-  pbypp     ~/Development/Repositories/pby_playboypremium
-  pbyte     ~/Development/Repositories/pby_tabletedition
-  pbypc     ~/Development/Repositories/pby_playmatecasting
-  pbynl     ~/Development/Repositories/pby_newsletter
-  pbytools  ~/Development/Repositories/pby_tools
-  hbmlc     ~/Development/Repositories/hbm_lottery_calendar
-  hbmep     ~/Development/Repositories/hbm_epaper
-  hbmep2    ~/Development/Repositories/hbm_epaper_portal
-  hbmpp     ~/Development/Repositories/hbm_privacy
-  hbmlp     ~/Development/Repositories/hbm_legal
-  hbmin     ~/Development/Repositories/hbm_invitations
-  cinde     ~/Development/Repositories/cin_cms_thunder
-  foclp     ~/Development/Repositories/foc_landingpage
+  cinde     ~/Development/Repositories/burdanews/cin_cms_thunder
+  foclp     ~/Development/Repositories/burdanews/foc_landingpage
+  pbyde     ~/Development/Repositories/burdanews/pby_playboyde
+  pbypp     ~/Development/Repositories/burdanews/pby_playboypremium
+  pbyte     ~/Development/Repositories/burdanews/pby_tabletedition
+  pbypc     ~/Development/Repositories/burdanews/pby_playmatecasting
+  pbynl     ~/Development/Repositories/burdanews/pby_newsletter
+  pbytools  ~/Development/Repositories/burdanews/pby_tools
+  hbmlc     ~/Development/Repositories/burdanews/hbm_lottery_calendar
+  hbmep     ~/Development/Repositories/burdanews/hbm_epaper
+  hbmep2    ~/Development/Repositories/burdadirect/hbm-epaper
+  hbmpp     ~/Development/Repositories/burdadirect/hbm-privacy
+  hbmlp     ~/Development/Repositories/burdadirect/hbm-legal
+  hbmin     ~/Development/Repositories/burdadirect/hbm-events
+  hbmeb     ~/Development/Repositories/burdadirect/hbm-events
 )
 
 for key in ${(k)NAMED_DIRS}
