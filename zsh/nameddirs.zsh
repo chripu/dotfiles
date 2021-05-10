@@ -16,7 +16,8 @@ NAMED_DIRS=(
   hbmpp     ~/Development/Repositories/burdadirect/hbm-privacy
   hbmlp     ~/Development/Repositories/burdadirect/hbm-legal
   hbmin     ~/Development/Repositories/burdadirect/hbm-events
-  hbmeb     ~/Development/Repositories/burdadirect/hbm-events
+  hbmev     ~/Development/Repositories/burdadirect/hbm-events
+  hbmlg     ~/Development/Repositories/burdadirect/hbm-leadgen
 )
 
 for key in ${(k)NAMED_DIRS}
