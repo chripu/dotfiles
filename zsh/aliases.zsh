@@ -8,18 +8,6 @@ function kill-all-nginx() {
     kill $(ps aux | grep '[n]ginx' | awk '{print $2}')
 }
 
-function start-dev() {
-    mysql.server start
-    phpbrew fpm start
-    ulimit -n 1024
-    brew services restart redis
-    brew services restart memcached
-    #brew services restart postgresql
-    #redis-server /usr/local/etc/redis.conf
-    #pg_ctl -D /usr/local/var/postgres/9.6 -l /usr/local/var/postgres/9.6/server.log start
-    sudo nginx
-}
-
 function start-cert() {
     clear
     cd ~dev/certificationy-cli
