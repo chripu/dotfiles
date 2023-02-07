@@ -55,7 +55,7 @@ user_name () {
 }
 
 php_version() {
-  echo "%{$fg[magenta]%}$(phpbrew_current_php_version)%{$reset_color%}"
+  echo "%{$fg_bold[magenta]%}$(phpbrew_current_php_version)%{$reset_color%}"
 }
 
 directory_name() {

@@ -1,5 +1,7 @@
 alias reload!='. ~/.zshrc'
 
+alias ll='ls -la'
+
 function kill-all-php() {
     kill $(ps aux | grep '[p]hp' | awk '{print $2}')
 }
@@ -20,4 +22,9 @@ function hosts-plusserver() {
 
 function hosts-burda() {
     sudo sh -c 'cat /etc/hosts.default /etc/hosts.custom /etc/hosts.site2site > /etc/hosts'
+}
+
+function nginx-reload() {
+    launchctl unload -w /Users/d429161/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+    launchctl load -w /Users/d429161/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 }

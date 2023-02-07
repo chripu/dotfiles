@@ -2,22 +2,21 @@ typeset -A NAMED_DIRS
 
 NAMED_DIRS=(
   dev       ~/Development/Repositories
-  cinde     ~/Development/Repositories/burdanews/cin_cms_thunder
-  foclp     ~/Development/Repositories/burdanews/foc_landingpage
-  pbyde     ~/Development/Repositories/burdanews/pby_playboyde
-  pbypp     ~/Development/Repositories/burdanews/pby_playboypremium
-  pbyte     ~/Development/Repositories/burdanews/pby_tabletedition
-  pbypc     ~/Development/Repositories/burdanews/pby_playmatecasting
-  pbynl     ~/Development/Repositories/burdanews/pby_newsletter
-  pbytools  ~/Development/Repositories/burdanews/pby_tools
-  hbmlc     ~/Development/Repositories/burdanews/hbm_lottery_calendar
-  hbmep     ~/Development/Repositories/burdanews/hbm_epaper
-  hbmep2    ~/Development/Repositories/burdadirect/hbm-epaper
+  bn        ~/Development/Repositories/burdanews
+  bd        ~/Development/Repositories/burdadirect
+  foclp     ~/Development/Repositories/burdadirect/foc-landingpage
+  focms     ~/Development/Repositories/burdadirect/foc-shop
+  hbmlc     ~/Development/Repositories/burdadirect/hbm-lottery-calendar
+  hbmep     ~/Development/Repositories/burdadirect/hbm-epaper
   hbmpp     ~/Development/Repositories/burdadirect/hbm-privacy
   hbmlp     ~/Development/Repositories/burdadirect/hbm-legal
   hbmin     ~/Development/Repositories/burdadirect/hbm-events
   hbmev     ~/Development/Repositories/burdadirect/hbm-events
   hbmlg     ~/Development/Repositories/burdadirect/hbm-leadgen
+  hbmlgl    ~/Development/Repositories/burdadirect/hbm-leadgen-lambda
+  hbmrc     ~/Development/Repositories/burdadirect/hbm-radas-core
+  hbmsp     ~/Development/Repositories/burdadirect/hbm-service-pages
+  hbmcidm   ~/Development/Repositories/burdadirect/hbm-cidm-frontend
 )
 
 for key in ${(k)NAMED_DIRS}
