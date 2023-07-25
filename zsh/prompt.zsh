@@ -54,8 +54,24 @@ user_name () {
   echo "%{$fg_bold[cyan]%}$(username_or_alias)%{$reset_color%}"
 }
 
+php_version_current() {
+  if type "php" > /dev/null
+  then
+    local version=$(php -v | grep -E "PHP [578]" | sed 's/.*PHP \([^-]*\).*/\1/' | cut -c 1-6 | xargs) 
+#    if [[ -z "$PHPBREW_PHP" ]]
+#    then
+#      echo "php:$version-system"
+#    else
+#      echo "php:$version-phpbrew"
+#    fi
+    echo "php:$version-brew"
+  else
+    echo "php:not-installed"
+  fi
+}
+
 php_version() {
-  echo "%{$fg_bold[magenta]%}$(phpbrew_current_php_version)%{$reset_color%}"
+  echo "%{$fg_bold[magenta]%}$(php_version_current)%{$reset_color%}"
 }
 
 directory_name() {

@@ -50,9 +50,6 @@ done
 
 unset config_files
 
-# https://github.com/phpbrew/phpbrew
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-
 # Add MYSQL to path. (Only necessary  because its not the newest version.)
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
