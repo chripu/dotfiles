@@ -5,18 +5,19 @@ NAMED_DIRS=(
   bn        ~/Development/Repositories/burdanews
   bd        ~/Development/Repositories/burdadirect
   foclp     ~/Development/Repositories/burdadirect/foc-landingpage
-  focms     ~/Development/Repositories/burdadirect/foc-shop
   hbmlc     ~/Development/Repositories/burdadirect/hbm-lottery-calendar
   hbmep     ~/Development/Repositories/burdadirect/hbm-epaper
   hbmpp     ~/Development/Repositories/burdadirect/hbm-privacy
   hbmlp     ~/Development/Repositories/burdadirect/hbm-legal
+  grtlp     ~/Development/Repositories/burdadirect/hbm-legal
   hbmin     ~/Development/Repositories/burdadirect/hbm-events
   hbmev     ~/Development/Repositories/burdadirect/hbm-events
   hbmlg     ~/Development/Repositories/burdadirect/hbm-leadgen
   hbmlgl    ~/Development/Repositories/burdadirect/hbm-leadgen-lambda
   hbmrc     ~/Development/Repositories/burdadirect/hbm-radas-core
   hbmsp     ~/Development/Repositories/burdadirect/hbm-service-pages
-  hbmcidm   ~/Development/Repositories/burdadirect/hbm-cidm-frontend
+  pplp      ~/Development/Repositories/burdadirect/pp-paketplus-landingpage
+  paclp     ~/Development/Repositories/burdadirect/pp-pacvertise-landingpage
 )
 
 for key in ${(k)NAMED_DIRS}

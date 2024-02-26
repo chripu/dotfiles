@@ -37,7 +37,7 @@
   ln = log --oneline --decorate
 [core]
   excludesfile = /Users/d429161/.gitignore
-  editor = sublime -n -w
+  editor = subl -n -w
 [apply]
   whitespace = nowarn
 [push]

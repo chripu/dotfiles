@@ -10,10 +10,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 
-# Add composer to path
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
-
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -50,16 +46,18 @@ done
 
 unset config_files
 
-# Add MYSQL to path. (Only necessary  because its not the newest version.)
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-
 # Add symfony to path
 export PATH="$HOME/.symfony/bin:$PATH"
 
-# Add openssl and curl to path
-#export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-#export PATH="/usr/local/opt/curl/bin:$PATH"
+# Add local bin to path
+export PATH="$HOME/.bin:$PATH"
+
+# Add elasticsearch to path
+export PATH="$HOME/Development/Tools/elasticsearch-8.12.2/bin:$PATH"
 
 # Add icu4c to path
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+#export PATH="/usr/local/opt/icu4c/bin:$PATH"
+#export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# Add sublime to path
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"

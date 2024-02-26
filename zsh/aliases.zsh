@@ -29,9 +29,19 @@ function nginx-reload() {
     launchctl load -w /Users/d429161/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 }
 
+function enable-xdebug() {
+    export XDEBUG_MODE=debug XDEBUG_SESSION=1    
+}
+
+function disable-xdebug() {
+    unset XDEBUG_MODE
+    unset XDEBUG_SESSION
+}
+
 function use-php-7.4() {
     brew unlink php@8.1;
     brew unlink php@8.2;
+    brew unlink php@8.3;
     brew link php@7.4 --force --overwrite;
     php -v
 }
@@ -39,6 +49,7 @@ function use-php-7.4() {
 function use-php-8.1() {
     brew unlink php@7.4;
     brew unlink php@8.2;
+    brew unlink php@8.3;
     brew link php@8.1 --force --overwrite;
     php -v
 }
@@ -46,6 +57,15 @@ function use-php-8.1() {
 function use-php-8.2() {
     brew unlink php@7.4;
     brew unlink php@8.1;
+    brew unlink php@8.3;
     brew link php@8.2 --force --overwrite;
+    php -v
+}
+
+function use-php-8.3() {
+    brew unlink php@7.4;
+    brew unlink php@8.1;
+    brew unlink php@8.2;
+    brew link php@8.3 --force --overwrite;
     php -v
 }
