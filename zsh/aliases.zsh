@@ -30,7 +30,7 @@ function nginx-reload() {
 }
 
 function enable-xdebug() {
-    export XDEBUG_MODE=debug XDEBUG_SESSION=1    
+    export XDEBUG_MODE=debug XDEBUG_SESSION=1 
 }
 
 function disable-xdebug() {
@@ -67,5 +67,26 @@ function use-php-8.3() {
     brew unlink php@8.1;
     brew unlink php@8.2;
     brew link php@8.3 --force --overwrite;
+    php -v
+}
+
+function use-mysql-8.0() {
+    brew unlink mysql@9.0;
+    brew unlink mysql@8.4;
+    brew link mysql@8.0 --force --overwrite;
+    php -v
+}
+
+function use-mysql-8.4() {
+    brew unlink mysql@9.0;
+    brew unlink mysql@8.0;
+    brew link mysql@8.4 --force --overwrite;
+    php -v
+}
+
+function use-mysql-9.0() {
+    brew unlink mysql@8.0;
+    brew unlink mysql@8.4;
+    brew link mysql@9.0 --force --overwrite;
     php -v
 }
