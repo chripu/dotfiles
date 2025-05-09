@@ -8,6 +8,8 @@ NAMED_DIRS=(
   hbmlc     ~/Development/Repositories/burdadirect/hbm-lottery-calendar
   hbmep     ~/Development/Repositories/burdadirect/hbm-epaper
   hbmpp     ~/Development/Repositories/burdadirect/hbm-privacy
+  hbmps     ~/Development/Repositories/burdadirect/hbm-phone-services
+  hbmdc     ~/Development/Repositories/burdadirect/hbm-data-catalog
   hbmlp     ~/Development/Repositories/burdadirect/hbm-legal
   grtlp     ~/Development/Repositories/burdadirect/hbm-legal
   hbmin     ~/Development/Repositories/burdadirect/hbm-events

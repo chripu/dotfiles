@@ -16,14 +16,6 @@ function start-cert() {
     php certificationy.php --number=10       
 }
 
-function hosts-plusserver() {
-    sudo sh -c 'cat /etc/hosts.default /etc/hosts.custom > /etc/hosts'
-}
-
-function hosts-burda() {
-    sudo sh -c 'cat /etc/hosts.default /etc/hosts.custom /etc/hosts.site2site > /etc/hosts'
-}
-
 function nginx-reload() {
     launchctl unload -w /Users/d429161/Library/LaunchAgents/homebrew.mxcl.nginx.plist
     launchctl load -w /Users/d429161/Library/LaunchAgents/homebrew.mxcl.nginx.plist

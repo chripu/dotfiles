@@ -46,14 +46,12 @@ done
 
 unset config_files
 
-# Add symfony to path
-export PATH="$HOME/.symfony/bin:$PATH"
-
 # Add local bin to path
 export PATH="$HOME/.bin:$PATH"
 
 # Add elasticsearch to path
-export PATH="$HOME/Development/Tools/elasticsearch-8.12.2/bin:$PATH"
+export PATH="$HOME/Development/Tools/elasticsearch-8.17.0/bin:$PATH"
+export PATH="$HOME/Development/Tools/kibana-8.17.0/bin:$PATH"
 
 # Add icu4c to path
 #export PATH="/usr/local/opt/icu4c/bin:$PATH"
@@ -61,3 +59,7 @@ export PATH="$HOME/Development/Tools/elasticsearch-8.12.2/bin:$PATH"
 
 # Add sublime to path
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# Add php to path
+export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
